@@ -1,0 +1,1895 @@
+{
+	"info": {
+		"_postman_id": "43947dc5-9232-4516-b50c-8af39c79e402",
+		"name": "light_house_local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"status"
+							]
+						},
+						"description": "status desct"
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/dashboard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"dashboard"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/dashboard",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"dashboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"new_registration\": 0,\n  \"active_family\": 0,\n  \"active_user\": 0\n}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/dashboard",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"dashboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"new_registration\": \"<function toUpperCase() { [native code] }>ثبت نام جدید\",\n  \"active_family\": \"<function toUpperCase() { [native code] }>خانواده فعال\",\n  \"active_user\": \"<function toUpperCase() { [native code] }>کاربر فعال\"\n}"
+						}
+					]
+				},
+				{
+					"name": "info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/info",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"info"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"info"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/list?asc=&order=&page=&num&search=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"list"
+							],
+							"query": [
+								{
+									"key": "asc",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+								},
+								{
+									"key": "order",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+								},
+								{
+									"key": "page",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>صفحه"
+								},
+								{
+									"key": "num",
+									"value": 20,
+									"description": "<function toUpperCase() { [native code] }>تعداد"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/list?asc=&order=&page=&num&search=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"list"
+									],
+									"query": [
+										{
+											"key": "asc",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+										},
+										{
+											"key": "order",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صفحه"
+										},
+										{
+											"key": "num",
+											"value": 20,
+											"description": "<function toUpperCase() { [native code] }>تعداد"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/list?asc=&order=&page=&num&search=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"list"
+									],
+									"query": [
+										{
+											"key": "asc",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+										},
+										{
+											"key": "order",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صفحه"
+										},
+										{
+											"key": "num",
+											"value": 20,
+											"description": "<function toUpperCase() { [native code] }>تعداد"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "relation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+								},
+								{
+									"key": "related_user",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/relation",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"relation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+										},
+										{
+											"key": "related_user",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/relation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+										},
+										{
+											"key": "related_user",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/relation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Y2FzaGVpcjpvZl9hc2RmYXNmYVNGa2RERlNhc2RmYXNkZmxha2o=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+								},
+								{
+									"key": "password",
+									"value": "{{pass}}",
+									"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Y2FzaGVpcjpvZl9hc2RmYXNmYVNGa2RERlNhc2RmYXNkZmxha2o=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Y2FzaGVpcjpvZl9hc2RmYXNmYVNGa2RERlNhc2RmYXNkZmxha2o=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+								},
+								{
+									"key": "password",
+									"value": "{{pass}}",
+									"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>شناسه*"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نام"
+								},
+								{
+									"key": "family",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>فامیلی"
+								},
+								{
+									"key": "birthdate",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نوع"
+								},
+								{
+									"key": "gender",
+									"value": 34,
+									"description": "<function toUpperCase() { [native code] }>جنس"
+								},
+								{
+									"key": "mobile",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>همراه"
+								},
+								{
+									"key": "national_id",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>کد ملی"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>توضیحات"
+								},
+								{
+									"key": "is_parent",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>سرپرست*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>شناسه*"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نام"
+										},
+										{
+											"key": "family",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>فامیلی"
+										},
+										{
+											"key": "birthdate",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع"
+										},
+										{
+											"key": "gender",
+											"value": 34,
+											"description": "<function toUpperCase() { [native code] }>جنس"
+										},
+										{
+											"key": "mobile",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>همراه"
+										},
+										{
+											"key": "national_id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کد ملی"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>توضیحات"
+										},
+										{
+											"key": "is_parent",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>سرپرست*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>شناسه*"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نام"
+										},
+										{
+											"key": "family",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>فامیلی"
+										},
+										{
+											"key": "birthdate",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع"
+										},
+										{
+											"key": "gender",
+											"value": 34,
+											"description": "<function toUpperCase() { [native code] }>جنس"
+										},
+										{
+											"key": "mobile",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>همراه"
+										},
+										{
+											"key": "national_id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کد ملی"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>توضیحات"
+										},
+										{
+											"key": "is_parent",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>سرپرست*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "status",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "dashboard",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/dashboard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"dashboard"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/dashboard",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"dashboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"new_registration\": \"<function toUpperCase() { [native code] }>ثبت نام جدید\",\n  \"active_family\": \"<function toUpperCase() { [native code] }>خانواده فعال\",\n  \"active_user\": \"<function toUpperCase() { [native code] }>کاربر فعال\"\n}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/dashboard",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"dashboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"new_registration\": 0,\n  \"active_family\": 0,\n  \"active_user\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "info",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/info",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"info"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"info"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "relation",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+								},
+								{
+									"key": "related_user",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/relation",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"relation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+										},
+										{
+											"key": "related_user",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/relation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع ارتباط: 1:فرزند و 2:پدرمادر و3: خواهربرار و 4: پدر/مادربزرگ و 5 :نوه و 6: سایر"
+										},
+										{
+											"key": "related_user",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کاربر مرتبط*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/relation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "asc",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+								},
+								{
+									"key": "order",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+								},
+								{
+									"key": "page",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>صفحه"
+								},
+								{
+									"key": "num",
+									"value": 20,
+									"description": "<function toUpperCase() { [native code] }>تعداد"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/list",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "asc",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+										},
+										{
+											"key": "order",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صفحه"
+										},
+										{
+											"key": "num",
+											"value": 20,
+											"description": "<function toUpperCase() { [native code] }>تعداد"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/list",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "asc",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صعودی/نزولی"
+										},
+										{
+											"key": "order",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>ستون ترتیبی"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>صفحه"
+										},
+										{
+											"key": "num",
+											"value": 20,
+											"description": "<function toUpperCase() { [native code] }>تعداد"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>عبارت جستجو"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/list",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+								},
+								{
+									"key": "password",
+									"value": "{{pass}}",
+									"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "{{user}}",
+											"description": "<function toUpperCase() { [native code] }>نام کاربری*"
+										},
+										{
+											"key": "password",
+											"value": "{{pass}}",
+											"description": "<function toUpperCase() { [native code] }>رمز عبور*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "SOCKET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>شناسه*"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نام"
+								},
+								{
+									"key": "family",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>فامیلی"
+								},
+								{
+									"key": "birthdate",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>نوع"
+								},
+								{
+									"key": "gender",
+									"value": 34,
+									"description": "<function toUpperCase() { [native code] }>جنس"
+								},
+								{
+									"key": "mobile",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>همراه"
+								},
+								{
+									"key": "national_id",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>کد ملی"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>توضیحات"
+								},
+								{
+									"key": "is_parent",
+									"value": "",
+									"description": "<function toUpperCase() { [native code] }>سرپرست*"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "responseModel",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>شناسه*"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نام"
+										},
+										{
+											"key": "family",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>فامیلی"
+										},
+										{
+											"key": "birthdate",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع"
+										},
+										{
+											"key": "gender",
+											"value": 34,
+											"description": "<function toUpperCase() { [native code] }>جنس"
+										},
+										{
+											"key": "mobile",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>همراه"
+										},
+										{
+											"key": "national_id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کد ملی"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>توضیحات"
+										},
+										{
+											"key": "is_parent",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>سرپرست*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "test",
+							"originalRequest": {
+								"method": "SOCKET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>شناسه*"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نام"
+										},
+										{
+											"key": "family",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>فامیلی"
+										},
+										{
+											"key": "birthdate",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>نوع"
+										},
+										{
+											"key": "gender",
+											"value": 34,
+											"description": "<function toUpperCase() { [native code] }>جنس"
+										},
+										{
+											"key": "mobile",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>همراه"
+										},
+										{
+											"key": "national_id",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>کد ملی"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>توضیحات"
+										},
+										{
+											"key": "is_parent",
+											"value": "",
+											"description": "<function toUpperCase() { [native code] }>سرپرست*"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			],
+			"description": "توضیحات کامل در مورد سرویس یوزر",
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "tokenName",
+						"value": "light_token",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "{{pass}}",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "password_credentials",
+						"type": "string"
+					},
+					{
+						"key": "clientSecret",
+						"value": "{{secret}}",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "{{user}}",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "accessTokenUrl",
+						"value": "{{baseUrl}}/user/login",
+						"type": "string"
+					}
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "user",
+			"value": "casheir",
+			"type": "string"
+		},
+		{
+			"key": "pass",
+			"value": "light_casheir",
+			"type": "string"
+		},
+		{
+			"key": "secret",
+			"value": "of_asdfasfaSFkdDFSasdfasdflakj",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3001/api",
+			"type": "string"
+		}
+	]
+}
